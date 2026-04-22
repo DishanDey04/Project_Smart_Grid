@@ -1,6 +1,6 @@
-P=3048000;
-Vin=11*29;
-fs=10e3;
+P=3006450;
+Vin=331.1;
+fs=10000;
 Vout=600;
 Ioutmax=P/Vout;
 delIL=0.01* Ioutmax * (Vout/Vin); %% ripple inductor
