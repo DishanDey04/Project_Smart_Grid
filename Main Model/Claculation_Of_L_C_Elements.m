@@ -1,0 +1,28 @@
+clc
+clear
+fprintf("PV and boost converter parameters\n");
+v_mp = 30.1;
+i_mp = 8.3;
+nv = 0.975; ni = 0.977; np = 0.953;
+fprintf('V_mp : %f\n', v_mp);
+fprintf('I_mp : %f\n', i_mp);
+cell_p = input("Enter the No. of parallel cell in the module : ");
+cell_s = input("Enter the No. of series cell in the module : ");
+v_in = v_mp * cell_s;
+i_in = i_mp * cell_p;
+p_in = v_in * i_in;
+p_out = p_in * np;
+fprintf('V_in: %.3f I_in: %.3f P_in: %.3f P_out: %.3f\n', v_in,i_in,p_in,p_out);
+fsw = input("Enter the switching frequency : ");
+v_out = input("Enter the required output voltage : ");
+del_iL_p = input("Enter the inductor corrent ripple in percentage : ");
+del_vout = input("Enter the output voltage ripple : ");
+iL = p_in/v_in;
+del_iL = iL * (del_iL_p / 100);
+v_out = v_out + (v_out * (1 - nv));
+ini_duty = 1 - (v_in/v_out);
+R_load = (v_out * v_out) / p_out;
+L = (v_in * ini_duty) / (del_iL * fsw);
+C = (v_in * ini_duty) / (del_vout * (1 - ini_duty) * R_load * fsw);
+save("Model_Parameter_Data.mat")
+run SmartGrid.slx
