@@ -1,24 +1,25 @@
 ===================================
-PV and boost converter parameters : 
+PV and Boost Converter Parameters
 ===================================
-Maximum power point voltage : 30.100 Volt
-Maximum power point current : 41.500 A
-Maximum input solar power : 1249.150 Watt
-PV output power : 1190.440 Watt
-DC bus voltage : 100.000 Volt
-Boost converter switching frequency : 10000.000 Hz
-Calculated initial duty cycle for MPPT : 0.706341
-Calculated inductor value for boost converter : 0.000256 H
-Calculated capacitor value for boost converter : 0.000820 F
-Calculated minimum R load value for boost converter : 8.825519 Ohm
+Maximum power point voltage : 20.000 Volt
+Maximum power point current : 2.510 A
+Maximum input solar power : 50.200 Watt
+PV output power : 47.841 Watt
+Actual DC bus voltage used : 24.600 Volt
+Boost converter switching frequency : 20000.000 Hz
+Calculated initial duty cycle for MPPT : 0.186992
+Calculated inductor value for boost converter : 0.000372 H
+Calculated capacitor value for boost converter : 0.000036 F
+Calculated minimum load resistance : 12.649507 Ohm
 
 ================================================
-Battery and Bidirectional converter parameters :
+Battery and Bidirectional Converter Parameters
 ================================================
-Battery nominal voltage : 48.000 Volt
-Battery capacity : 48.000 Ah
-Bidirectional converter switching frequency : 10000.000 Hz
-Calculated initial duty cycle for BESS : 0.468293
-Calculated inductor value for bidirectional converter : 0.001099 H
-Calculated battery side capacitor value for bidirectional converter : 0.000029 F
-Calculated DC bus side capacitor value for bidirectional converter : 0.000820 F
+Battery nominal voltage : 12.000 Volt
+Battery capacity : 100.000 Ah
+Battery current : 3.987 A
+Bidirectional converter switching frequency : 20000.000 Hz
+Calculated initial duty cycle for BESS : 0.487805
+Calculated inductor value for bidirectional converter : 0.000385 H
+Calculated battery side capacitor value : 0.000009967 F
+Calculated DC bus side capacitor value : 0.000036 F
